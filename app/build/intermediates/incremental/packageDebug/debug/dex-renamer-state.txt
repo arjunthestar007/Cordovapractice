@@ -1,0 +1,4 @@
+#Sat Jan 12 20:55:21 PST 2019
+base.0=/Users/arjun/Cordovapractice/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

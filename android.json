@@ -1,0 +1,63 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Adder\"><param name=\"android-package\" value=\"jerry.adder.Adder\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Adder1\"><param name=\"android-package\" value=\"jerry.adder1.Adder1\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "jerry.adder": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    },
+    "jerry.adder1": {
+      "PACKAGE_NAME": "io.cordova.hellocordova"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "jerry.adder.Adder",
+      "file": "plugins/jerry.adder/www/Adder.js",
+      "pluginId": "jerry.adder",
+      "clobbers": [
+        "cordova.plugins.Adder"
+      ]
+    },
+    {
+      "id": "jerry.adder1.Adder1",
+      "file": "plugins/jerry.adder1/www/Adder1.js",
+      "pluginId": "jerry.adder1",
+      "clobbers": [
+        "cordova.plugins.Adder1"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "jerry.adder": "1.0.0",
+    "jerry.adder1": "1.0.0"
+  }
+}
